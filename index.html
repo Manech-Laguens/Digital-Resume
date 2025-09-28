@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        
+        <div class="left">
+        <a href="/">Manech Laguens</a>
+        
+        </div>
+        <div class="rigth">
+            <a href="https://github.com/Manech-Laguens" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </a>
+                        
+            <a href="https://www.linkedin.com/in/manech-laguens-020127293/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:manech.laguens@epitech.eu">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Mon Email</span>
+            </a>
+        </div>
+    </nav>
+
+    
+    <main>
+        <section class="myself">
+            <div class="text">
+                <h2>Je développe, je collabore, j'apprends</h2>
+                <p>Actuellement étudiant en troisième année (pré-MSc) à Epitech Montpellier, je suis à la recherche d'une alternance à partir de janvier 2026, en rythme deux semaines en entreprise / une semaine à l'école.</p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="#pastprojects">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Ressources</span>
+                    </a>
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="headshot">
+                <img src="images/manech.webp" alt="mypictures">
+
+            </div>
+        </section>
+            <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Curieux, impliqué et motivé, j'ai acquis une solide éxpérience en développment (Pyhton, HTML/CSS, JavaScript) ainsi qu'en gestion de projets. Grace a mon parcours scolaire, j'ai aussi pu développer de fortes compétences humaines telles que le travail en équipe et la communication interpersonnelle.
+        </div>
+        <div class="cells">
+            <div class="cell">
+                <img src="images/html-logo.webp" alt="html logo">
+                <span>HTML</span>
+            </div>
+            <div class="cell">
+                <img src="images/css-logo.webp" alt="css logo">
+                <span>CSS</span>
+            </div>
+            <div class="cell">
+                <img src="images/python.webp" alt="python logo">
+                <span>Python</span>
+            </div>
+            <div class="cell">
+                <img src="images/javascript-logo.webp" alt="js logo">
+                <span>JavaScript</span>
+            </div>
+                </div>
+        </section>
+       
+        
+        <section id="pastprojects" class="projects">
+            <h2>Ressources</h2>
+
+            <div class="panels">
+                <a href="images/CVManech.pdf" target="_blank" class="pan">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>Voir mon CV</span>
+                </a>
+
+                <a href="https://github.com/Manech-Laguens/2023-2024-project-4-sportshield-team-7" target="_blank" class="pan">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Projet SportShield</span>
+                </a>
+
+                <a href="https://github.com/Manech-Laguens/2023-2024-project-5-flutter-team-7" target="_blank" class="pan">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Projet Adopte Un Candidat</span>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="contact-section">
+            <h2>Une question? Un projet?</h2>
+            <div class="group">
+                <div class="text">
+                    Si vous avez besoin de renseignements supplémentaires ou que vous souhaitez me contacter, n'hésitez pas à utiliser ce formulaire.
+
+                </div>
+
+                <form action="https://formsubmit.co/033c47fa510d859baa6c383fdde1c197" method="POST"> <!-- working submit feature-->
+                   
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="John French" name="name" required>
+                
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="john@gmail.com" name="email" required>
+
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10" name="msg" required></textarea>
+                     
+                    <button type="submit">Envoyer</button>
+
+                    <input type="hidden" name="_captcha" value="false"> 
+                    <!-- true if captacha needed -->
+
+
+                </form>
+            </div>
+        </section>
+        
+        
+
+        
+
+
+    </main>
+    
+</body>
+
+
+
+
+</html>

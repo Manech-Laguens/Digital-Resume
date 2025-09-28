@@ -1,0 +1,304 @@
+:root {
+    --text-color: rgb(0, 0, 0); 
+    --link-color: rgb(0, 0, 255);
+    --background-color: rgb(231, 231, 231); 
+}
+:visited {
+    color: var(--link-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+nav .left a {
+    padding: 0  20px;
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+nav .rigth a {
+    color: var(--text-color);
+    margin: 0 18px;
+    text-decoration: none;
+
+}
+nav .rigth a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.myself {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+}
+
+.myself .text {
+     
+    flex: 5;
+
+}
+.myself .text h2{
+    font-size: 50px;
+
+}
+.myself .text .links {
+    margin-top: 25px;
+
+}
+
+.myself .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.1s;
+    text-decoration: none;
+    font-size: 17px;
+    
+    
+}
+.myself .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+
+}
+.myself .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.myself .headshot img {
+    width: 350px;
+    border-radius: 90%;
+
+}
+
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+
+}
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.O;
+
+}
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skills-section .cell {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;       
+    width: 100px;              
+    margin-bottom: 20px;       
+}
+.skills-section .cell img {
+    width: 60px;              
+    margin-bottom: 10px;       
+}
+
+.skills-section .cell span {
+    font-size: 14px;           
+    font-weight: 600;         
+}
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+
+.contact-section h2 {
+    font-size: 30px;
+
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.0;
+}
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea {
+    border: 2px solid var(--link-color); 
+    padding: 10px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(.9);
+
+}
+
+.projects {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+
+}
+.projects .pan {    
+    padding: 20px;
+    background-color: white;
+    height: 150px;
+    width: 20%;
+
+    
+    
+}
+.panels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 50px;
+    margin-top: 30px;
+}
+.pan { /* alternativ solution than @media */
+
+    background-color: white;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 250px;
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.pan i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.pan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(2, 2, 2, 0);
+}
+.myself .text p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+@media screen and (max-width: 850px){
+    .myself .text h2 {
+        font-size: 30px;
+
+    }    
+}
+@media screen and (max-width: 740px){
+    .myself {
+        flex-direction: column-reverse;
+
+    }
+    .myself .headshot img {
+        width: 250px;
+
+    }
+    .contact-section .group {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    nav {
+        padding: 0 20px;
+    }
+    nav .rigth a {
+        font-size: 20px;
+    }
+    nav .rigth a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .rigth a span{
+        display: none;
+    }
+
+    .myself {
+        padding: 0 20px;
+    }   
+    .myself .text h2 {
+        font-size: 20px;
+    }
+
+    .contact-section {
+        padding: 0 20px;
+    }
+
+
+    
+
+
+} 
