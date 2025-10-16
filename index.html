@@ -37,7 +37,19 @@
     <main>
         <section class="myself">
             <div class="text">
-                <h2>Je développe, je collabore, j'apprends</h2>
+                
+                <h2> Je <span class="auto-type"></span></h2>
+                
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings : ["développe","collabore", "progresse"],
+                        typeSpeed : 50,
+                        backSpeed : 100,
+                        loop : true
+                    })
+                </script>
+                <!-- <h2>Je développe, je collabore, j'apprends</h2> -->
                 <p>Actuellement étudiant en troisième année (pré-MSc) à Epitech Montpellier, je suis à la recherche d'une alternance à partir de janvier 2026, en rythme deux semaines en entreprise / une semaine à l'école.</p>
                 <div class="links">
                     <a href="#skills">
@@ -112,6 +124,18 @@
                 <a href="https://github.com/Manech-Laguens/2023-2024-project-5-flutter-team-7" target="_blank" class="pan">
                     <i class="fa-brands fa-github"></i>
                     <span>Projet Adopte Un Candidat</span>
+                </a>
+                <a href="" target="_blank" class="pan">
+                    <i></i>
+                    <span></span>
+                </a>
+                <a href="" target="_blank" class="pan">
+                    <i></i>
+                    <span></span>
+                </a>
+                <a href="" target="_blank" class="pan">
+                    <i></i>
+                    <span></span>
                 </a>
             </div>
         </section>
